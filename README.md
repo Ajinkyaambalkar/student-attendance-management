@@ -1,0 +1,2 @@
+# student-attendance-management
+This project is devloped in java technology. Two modules are present in this project: a)HOD(Head Of Department) module and b)Faculty module. HOD has an authority to and remove faculty as well as allocate subject to every faculty.HOD can add and remove student also from class. Faculty can select branch, year and class before taking attendance. After taken assignment, HOD can be able to calculate assignment daily as well as monthly.
