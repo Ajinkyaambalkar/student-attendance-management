@@ -1,0 +1,24 @@
+create table hodregister(username varchar(15) primary key,password vrachar(15),name varchar(20),phone integer(26),address varchar(20), gender enum('male','female'),birthdate date,emailid varchar(20),branch varchar(20),qualification varchar(40));
+
+
+
+
+
+
+create table facultyregister(username varchar(15) primary key,password vrachar(15),name varchar(20),phone integer(26),address varchar(20), gender enum('male','female'),birthdate date,emailid varchar(20),branch varchar(20),);
+
+
+
+
+
+
+create table suballocate(fname varchar(20), subject varchar(20));
+
+
+
+create table studentregister(name varchar(25),rollno integer primary key, branch varchar(20),year varhar(20),section avrchar(20));
+
+
+
+create table demo(rollno varchar(20),name varchar(25),attend int,total int(5),avg double(10));
+

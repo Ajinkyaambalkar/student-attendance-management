@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<style>
+
+#nav1 {
+    line-height:30px;
+    background-color :#eeeeee;
+    height:550px;
+    width:300px;
+    float:left;
+    padding:5px;
+	
+}
+
+
+#nav2 {
+    line-height:30px;
+    background-color :#eeeeee;
+    height:550px;
+    width:300px;
+    float:right;
+    padding:5px;	      
+}
+#section {
+    width:600px;
+	height:580px;
+    float:left;
+    padding:2px;
+	background-color:#00BFFF;
+    	
+}
+#site_content{
+width:1050;
+overflow:hidden;
+margin:4px auto 0 auto;
+padding:0;
+}
+
+#left_content{
+float:left;
+text-align:justify;
+width:460px;
+padding:8px  5px 20px;
+margin:0;
+}
+
+#footer {
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:right;
+   padding:20px;	 	 
+}
+
+form fieldset a {
+color: #5a5656;
+font-size: 20px;
+}
+form fieldset a:hover { text-decoration: underline; }
+
+</style>
+</head>
+
+
+
+
+<html>
+<head>
+<meta charset="utf-8">
+<title>Student Attendence Management</title>
+</style>
+</head>
+</head>
+<body style="background-color:#00BFFF">
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<title>Student Attendance Management</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/print.css" media="print">
+<script src="js/jquery-1.6.4.min.js"></script>
+<script src="js/custom.js"></script>
+<!--[if lt IE 9]>
+<script src="js/css3-mediaqueries.min.js"></script>
+<script src="js/html5.js"></script>
+<script src="js/IE9.js"></script>
+<![endif]-->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+  <title>Back to Home</title>
+  <link rel="shortcut icon" href="http://designshack.net/favicon.ico">
+  <link rel="icon" href="http://designshack.net/favicon.ico">
+  <link rel="stylesheet" type="text/css" media="all" href="style.css">
+  <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+  <script type="text/javascript" charset="utf-8" src="js/jquery.leanModal.min.js"></script>
+  <!-- jQuery plugin leanModal under MIT License http://leanmodal.finelysliced.com.au/ -->
+</head>
+<body>
+<header class="clearFix">
+  <div class="wrap"> <a id="logo" href="#">Student Attendence Management</a>
+    <hr>
+    <nav>
+      <div id="nav"> <strong>Navigation</strong>
+        <ul>
+          <li class="active"> <a href="/Attendence/index.html">Home</a> </li>
+          <li> <a href="#">Profile</a> </li>
+                   
+          <li> <a href="/Attendence/home.jsp">Logout</a> </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+
+
+<div id="nav1" style="background-color:#00BFFF">
+<marquee direction="up",scrolldelay="185",scrollamount="15"  ><img src="/Attendence/images/std.gif" style="width:350px;height:300px"><img src="/Attendence/images/pics1.jpg" style="width:350px;height:300px"><br></marquee><br>
+
+
+<h1><hr></h1>
+
+
+
+</div>
+<div id="nav2" style="background-color:#00BFFF">
+<marquee direction="up",scrolldelay="185",scrollamount="15"  ><img src="/Attendence/images/std.gif" style="width:350px;height:300px"><img src="/Attendence/images/pics1.jpg" style="width:350px;height:300px"><br></marquee><br>
+
+<h1><hr></h1>
+
+
+
+
+</div>
+<form name="frm" method="Get" action="/Attendence/servlet/Stdadd">
+
+<div id="section">
+
+<div style="background-color:black; color:white; margin:0px; padding:0px;">
+
+<fieldset class="row1">
+  <label class="optional">Student Name
+      </label>
+      <input type="text"  name="name"/>
+     
+ <label class="optional">Roll NO.
+      </label>
+      <input type="text"  name="rollno"/>
+     
+	 </fieldset>
+	 <fieldset CLASS="ROW2">
+	 <label>Branch&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    </label>
+                    <select name="branch">
+					<option value="0" width="100px" >-SELECT-
+                        </option>
+                        <option value="COMPUTER">Computer
+                        </option>
+						<option value="Information Technology">Information Technology
+                        </option>
+						</select>
+				
+					<label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspYear&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    </label>
+                    <select name="year">
+					<option value="0" width="100px" >-SELECT-
+                        </option>
+						<option value="First Year">First Year
+                        </option>
+                        <option value="Second Year">Second Year
+                        </option>
+						<option value="Third Year">Third Year
+                        </option>
+						<option value="Final Year">Final Year
+                        </option>
+                        
+                    </select>
+				</FIELDSET>
+				<FIELDSET CLASS="ROW3">
+					<label>Section&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    </label>
+                    <select name="section">
+					<option value="0" width="100px" >-SELECT-
+                        </option>
+                        <option value="Section A">Section A
+                        </option>
+						<option value="Section B">Section B
+                        </option>
+						</select>
+					</fieldset>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		
+</div>
+<div style="background-color:black; color:white; margin:100px; padding:50px;">
+<center> <button class="button"><a href="">Add</a></button></form>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  <button class="button" padding="100px"> <a href="/Attendence/underlogin.html">Back</button>
+</center>
+</div>
+
+</div>
+
+
+
+<div id="footer">
+<center>
+<li><a href="/Attendence/home.jsp"> Home </a> | <a href="/Attendence/login.html"> Login </a> | <a href="#">  Profile </a>| <a href="#"> Help </a> |<a href="#"> Contacts Us </a></li>
+</center>
+<p class="floatRight"> Copyright &copy; 2015 <a href="#">Foolish Boys </a> &ndash; All Rights Reserved<br>
+</div>
+
+</body>
+
+<!-- Mirrored from www.w3schools.com/html/tryit.asp?filename=tryhtml_layout_divs by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 23 Jan 2015 07:20:27 GMT -->
+</html>

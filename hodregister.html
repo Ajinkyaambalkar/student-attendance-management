@@ -1,0 +1,200 @@
+<head>
+<style>
+
+#footer {
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:right;
+   padding:20px;	 	 
+}
+
+
+form fieldset a {
+color: #5a5656;
+font-size: 10px;
+}
+form fieldset a:hover { text-decoration: underline; }
+</style>
+
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<title>Student Attendance Management</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/print.css" media="print">
+<script src="js/jquery-1.6.4.min.js"></script>
+<script src="js/custom.js"></script>
+<!--[if lt IE 9]>
+<script src="js/css3-mediaqueries.min.js"></script>
+<script src="js/html5.js"></script>
+<script src="js/IE9.js"></script>
+<![endif]-->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+  <title>Back to Home</title>
+  <link rel="shortcut icon" href="http://designshack.net/favicon.ico">
+  <link rel="icon" href="http://designshack.net/favicon.ico">
+  <link rel="stylesheet" type="text/css" media="all" href="style.css">
+  <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+  <script type="text/javascript" charset="utf-8" src="js/jquery.leanModal.min.js"></script>
+  <!-- jQuery plugin leanModal under MIT License http://leanmodal.finelysliced.com.au/ -->
+</head>
+<body>
+<header class="clearFix">
+  <div class="wrap"> <a id="logo" href="#">Student Attendance Management</a>
+    <hr>
+    <nav>
+      <div id="nav"> <strong>Navigation</strong>
+        <ul>
+          <li class="active"> <a href="/Attendence/index.html">Home</a> </li>
+          <li> <a href="#">Profile</a> </li>
+         
+          </li>
+          
+          <li> <a href="/Attendence/home.jsp">Logout</a> </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+    <head>
+        <title>User Registration</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <link rel="stylesheet" type="text/css" href="css/default.css"/>
+    </head>
+    <body style="background-color:#00BFFF">
+        <form class="register"  name="frm" method="Get" action="/Attendence/servlet/register">
+            <h1>HOD Registration</h1><body background="/Attendence/images/attd.jpg" height="500px" width="900px"></body>
+            <fieldset class="row1">
+                <legend>Account Details
+                </legend>
+                <p>
+                    <label>Username *
+                    </label>
+                    <input type="text" name="Username" required placeholder="enter username"/>
+                    
+                </p>
+                <p>
+                    <label>Password *
+                    </label>
+                    <input type="password" name="Password" required placeholder="enter password"/>
+                    
+                  
+                </p>
+            </fieldset>
+            <fieldset class="row2">
+                <legend>Personal Details
+                </legend>
+                <p>
+                    <label>Name *
+                    </label>
+                    <input type="text" class="long" name="Name"required placeholder="enter name"/>
+                </p>
+                <p>
+                    <label>Phone *
+                    </label>
+                    <input type="text" maxlength="13" value="+91" name="Phone" required placeholder="enter phone no."/>
+                </p>
+                <p>
+                    <label class="optional">Address
+                    </label>
+                    <input type="text" class="long" name="Address"required placeholder="enter address"/>
+                </p>
+                <p>
+                    <label>City *
+                    </label>
+                    <input type="text" class="long" name="City" required placeholder="enter city"/>
+                </p>
+                
+                
+				
+				<p>
+                    <label>Gender *</label>
+                    <input type="radio" value="male" name="Male"/>
+                    <label class="gender">Male</label>
+                    <input type="radio" value="female" name="Male"/>
+                    <label class="gender">Female</label>
+                </p>
+                <p>
+                    <label>Birthdate *
+                    </label>
+            <input type="date" name="bday" required placeholder="enter date">
+                </p>
+            </fieldset>
+			
+            <fieldset class="row3">
+                <legend>Further Information
+                </legend>
+				<p>
+                    <label class="optional">Email id.
+                    </label>
+                    <input type="text" class="long"  name="Email"required placeholder="enter email"/>
+
+                </p>
+                
+                <p>
+                    <label>Branch *
+                    </label>
+                    <select name="Branch">
+					<option value="0" width="100px" name="Branch">-SELECT-
+                        </option>
+                        <option value="Computer science & engineering">Computer Science And Engineering
+                        </option>
+ <option value="IT">IT
+                        </option>
+						
+                       
+                        
+                    </select>
+                </p>
+				<p>
+                    <label>Qualification
+                    </label>
+                    <input type="text" class="long" name="Qualification"required placeholder="enter qualification"/>
+                </p>
+				 
+                   
+               
+            </fieldset>
+            <fieldset>
+            <div><button class="button"><a href="/Attendence/servlet/Hregister">Register </a></button></div>
+			</fieldset>
+        </form>
+		
+		<div id="footer">
+<center>
+<li><a href="/Attendence/home.jsp"> Home </a> | <a href="/Attendence/home.jsp"> Login </a> | <a href="#">Profile </a>| <a href="#"> Help </a> |<a href="#"> Contacts Us </a></li>
+</center>
+<p> Copyright &copy; 2015 <a href="#">Foolish Boys </a> &ndash; All Rights Reserved<br></p>
+</div>
+    </body>
+</html>
+
+
+
+
+
